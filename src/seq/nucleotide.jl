@@ -1280,7 +1280,7 @@ isless{T, K}(x::Kmer{T, K}, y::Kmer{T, K}) = convert(UInt64, x) < convert(UInt64
 
 length{T, K}(x::Kmer{T, K}) = K
 
-# Iterating over nucleotides
+# Iterating over each nucleotide of a k-mer
 start(x::Kmer) = 1
 
 function next{T, K}(x::Kmer{T, K}, i::Int)

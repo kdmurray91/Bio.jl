@@ -74,7 +74,8 @@ export Nucleotide,
     AA_X,
     FASTA,
     FASTQ,
-    Alphabet
+    Alphabet,
+    allkmers
 
 using BufferedStreams,
     Base.Intrinsics,
@@ -134,6 +135,7 @@ include("util.jl")
 include("alphabet.jl")
 include("quality.jl")
 include("seqrecord.jl")
+include("kmers.jl")
 
 # Parsing file types
 include("fasta.jl")
